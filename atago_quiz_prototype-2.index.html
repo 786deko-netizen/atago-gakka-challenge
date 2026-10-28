@@ -1,1 +1,67 @@
-
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#b8202f">
+<title>あたご学科チャレンジ｜試作品</title>
+<style>
+:root{--red:#b8202f;--red-dark:#861724;--gold:#f5c84c;--ink:#20242b;--muted:#667085;--paper:#f5f6f8;--line:#e1e4e8;--green:#177245;--bad:#b42318}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;line-height:1.6}button,select{font:inherit}button{cursor:pointer}.hero{background:linear-gradient(135deg,var(--red-dark),var(--red));color:white;padding:24px 18px 26px;border-bottom:5px solid var(--gold)}.hero-inner,.wrap{max-width:760px;margin:auto}.brand{display:flex;align-items:center;gap:11px}.logo{height:48px;width:48px;border:2px solid white;border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:20px;letter-spacing:-2px;flex:none}.eyebrow{font-size:12px;letter-spacing:.12em;font-weight:800;opacity:.88}.hero h1{font-size:clamp(25px,6vw,36px);line-height:1.2;margin:8px 0}.hero p{margin:8px 0 0;color:#fff0f0;font-size:14px}.wrap{padding:18px 14px 36px}.notice{background:#fff8df;border:1px solid #f1d67c;padding:11px 13px;border-radius:12px;font-size:13px;margin-bottom:16px}.panel{background:white;border:1px solid var(--line);border-radius:18px;padding:18px;margin-bottom:15px;box-shadow:0 3px 12px #20242b08}.section-title{font-size:17px;font-weight:850;margin:0 0 10px}.sub{color:var(--muted);font-size:13px;margin:0 0 12px}.select-wrap{display:grid;gap:8px}.select-wrap label{font-size:13px;font-weight:750}.select-wrap select{width:100%;padding:13px;border:1px solid #c9ced6;border-radius:11px;background:white;color:var(--ink)}.btn{border:0;border-radius:12px;padding:13px 16px;font-weight:800;min-height:48px}.btn-primary{background:var(--red);color:white;width:100%;margin-top:12px}.btn-primary:hover{background:var(--red-dark)}.btn-secondary{background:#f1f2f5;color:var(--ink);border:1px solid var(--line)}.btn-row{display:flex;gap:9px;flex-wrap:wrap}.btn-row .btn{flex:1}.progress-head{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:13px;color:var(--muted);font-weight:700}.progress{height:7px;background:#eceef1;border-radius:99px;overflow:hidden;margin:9px 0 17px}.progress>div{height:100%;background:var(--red);width:0;transition:width .2s}.q-number{color:var(--red);font-size:12px;font-weight:900;letter-spacing:.08em}.question{font-size:19px;font-weight:850;line-height:1.55;margin:7px 0 16px}.answers{display:grid;grid-template-columns:1fr 1fr;gap:10px}.answer{border:1.5px solid #d7dbe2;border-radius:13px;background:#fff;padding:15px 12px;font-weight:850;min-height:58px}.answer:focus-visible,.btn:focus-visible,select:focus-visible{outline:3px solid #f5c84c;outline-offset:2px}.answer.selected{border-color:var(--red);background:#fff0f1;color:var(--red)}.answer:disabled{cursor:default}.answer.correct{border-color:var(--green);background:#eaf7ef;color:var(--green)}.answer.wrong{border-color:var(--bad);background:#fff0ef;color:var(--bad)}.feedback{margin-top:14px;border-radius:12px;padding:13px;background:#f5f6f8;font-size:14px}.feedback.good{background:#eaf7ef;border:1px solid #b4e0c4}.feedback.bad{background:#fff0ef;border:1px solid #f3c0bc}.feedback strong{display:block;margin-bottom:4px}.explanation{margin:5px 0 0}.hidden{display:none!important}.result-score{font-size:48px;font-weight:950;color:var(--red);line-height:1.1}.result-sub{font-size:14px;color:var(--muted);margin-top:7px}.result-top{display:flex;align-items:center;gap:16px;flex-wrap:wrap}.score-ring{border:7px solid #f3d9dc;border-top-color:var(--red);border-radius:50%;width:100px;height:100px;display:grid;place-items:center;flex:none}.score-ring span{font-size:22px;font-weight:900}.review-item{padding:12px 0;border-top:1px solid var(--line);font-size:14px}.review-item:first-child{border-top:0}.review-item b{display:block;margin-bottom:4px}.status{font-weight:800}.status.good{color:var(--green)}.status.bad{color:var(--bad)}.footer{text-align:center;font-size:12px;color:var(--muted);padding:12px 10px 20px}.tag{display:inline-block;background:#fff0f1;color:var(--red);border-radius:99px;padding:4px 9px;font-size:12px;font-weight:850}.demo-label{font-size:11px;color:#fff;background:#ffffff24;border:1px solid #ffffff70;border-radius:99px;padding:3px 8px;margin-left:auto;white-space:nowrap}@media(min-width:600px){.hero{padding:30px 24px}.wrap{padding:24px 20px 44px}.panel{padding:22px}.question{font-size:21px}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="hero-inner"><div class="brand"><div class="logo" aria-label="あたご">あたご</div><div><div class="eyebrow">ATAGO DRIVING SCHOOL</div><div style="font-weight:850;font-size:14px">あたご自動車学校</div></div><span class="demo-label">WEB教材 試作品</span></div><h1>あたご学科チャレンジ</h1><p>バスの中の5分で、交通ルールを確認しよう。</p></div></header>
+<main class="wrap">
+<div class="notice"><strong>試作版について：</strong>学習画面の動作確認用です。問題はサンプルで、正式教材として使用する前に指導員による内容確認が必要です。運転中・歩行中は操作しないでください。</div>
+<section id="setup" class="panel"><h2 class="section-title">今日のチャレンジを選ぶ</h2><p class="sub">分野を選ぶと、その分野から5問出題します。回答後すぐに正誤と解説を確認できます。</p><div class="select-wrap"><label for="category">問題分野</label><select id="category"><option value="signs">標識・標示</option><option value="intersection">交差点・優先関係</option><option value="pedestrians">歩行者・安全確認</option><option value="rules">基本の交通ルール</option><option value="hazards">危険予測</option><option value="mixed">ランダムミックス</option></select></div><button id="start" class="btn btn-primary">5問にチャレンジする →</button></section>
+<section id="quiz" class="panel hidden" aria-live="polite"><div class="progress-head"><span id="categoryLabel">標識・標示</span><span id="count">第1問 / 5問</span></div><div class="progress"><div id="progressFill"></div></div><div class="q-number" id="qNumber">QUESTION 01</div><div class="question" id="questionText"></div><div class="answers"><button class="answer" id="trueBtn">○　正しい</button><button class="answer" id="falseBtn">×　誤り</button></div><div id="feedback" class="feedback hidden" aria-live="polite"></div><div class="btn-row" style="margin-top:14px"><button id="next" class="btn btn-primary hidden">次の問題へ →</button><button id="quit" class="btn btn-secondary">やめる</button></div></section>
+<section id="result" class="panel hidden" aria-live="polite"><span class="tag">チャレンジ結果</span><h2 class="section-title" style="margin-top:12px">おつかれさまでした！</h2><div class="result-top"><div class="score-ring"><span id="scoreRing">4/5</span></div><div><div class="result-score" id="scoreText">4 / 5</div><div class="result-sub" id="scoreMessage">あと少し！間違えた問題を復習しよう。</div></div></div><h3 class="section-title" style="margin-top:22px">答えと解説</h3><div id="review"></div><div class="btn-row" style="margin-top:16px"><button id="retry" class="btn btn-primary">同じ分野でもう一度</button><button id="change" class="btn btn-secondary">分野を選び直す</button></div></section>
+<section class="panel"><h2 class="section-title">この教材の使い方</h2><p class="sub" style="margin-bottom:0">① QRコードを読み込む → ② 分野を選ぶ → ③ 5問回答 → ④ 解説で復習。個人名や免許情報を入力せずに使える設計です。この試作品では回答結果を外部サーバーに送信・保存しません。</p></section>
+</main><footer class="footer">あたご自動車学校｜学科クイズWeb教材・試作品<br>※正式な法令・試験対策教材は、学校で内容確認のうえ公開してください。</footer>
+<script>
+const BANK={
+signs:[
+{q:'「一時停止」の標識がある場所では、停止線の直前で一時停止しなければならない。',a:true,e:'一時停止の標識がある場所では、停止線の直前（停止線がない場合は交差点の直前）で一時停止し、安全を確認します。'},
+{q:'「車両進入禁止」の標識は、車両がその方向から進入してはいけないことを示す。',a:true,e:'車両進入禁止は、標識が示す方向から車両が入ることを禁止します。標識の意味を形や色だけで決めつけず、正式な意味を覚えましょう。'},
+{q:'「車両通行止め」の標識がある道路は、車両が通行できない。',a:true,e:'車両通行止めは、車両の通行を禁止する標識です。進入禁止との違いも整理しましょう。'},
+{q:'道路標示の黄色い実線は、どんな場合でも絶対にまたいではならない。',a:false,e:'道路標示は種類や設置状況によって意味が異なります。「黄色い実線なら、どんな場合も絶対」と一括りにせず、標示の種類と規制内容を確認することが大切です。'},
+{q:'標識の意味が分からないときは、周囲の車と同じ動きをすればよい。',a:false,e:'周囲の車の動きだけに頼るのは危険です。標識・標示を正しく理解し、必要に応じて安全な場所で確認しましょう。'}],
+intersection:[
+{q:'信号のない交差点で、同じ幅の道路が交わる場合は、原則として左方から来る車の進行を妨げてはならない。',a:true,e:'同じような幅の道路が交わる信号のない交差点では、原則として左方から来る車が優先です。ただし、優先道路など別の条件がある場合は異なります。'},
+{q:'右折するときは、対向する直進車や左折車の進行を妨げてはならない。',a:true,e:'右折車は、対向する直進車や左折車の進行を妨げてはいけません。交差点では相手の速度や距離をよく確認します。'},
+{q:'優先道路を走っているなら、交差点でも安全確認をしなくてよい。',a:false,e:'優先道路でも安全確認は必要です。相手が気づいていない可能性を考え、危険に備えて運転しましょう。'},
+{q:'見通しの悪い交差点では、標識などによる別の指示がなくても、必ず一時停止しなければならない。',a:false,e:'見通しの悪い交差点では徐行が必要となる場合がありますが、必ず一時停止と一律に決まるわけではありません。一時停止標識などの有無を確認します。'},
+{q:'左折するときは、あらかじめ道路の左端に寄り、歩行者や自転車などにも注意する。',a:true,e:'左折前にはあらかじめ道路の左端に寄り、巻き込みや横断歩行者・自転車に注意して曲がります。'}],
+pedestrians:[
+{q:'横断歩道を渡ろうとしている歩行者がいるときは、横断歩道の手前で一時停止し、通行を妨げてはならない。',a:true,e:'横断しようとしている歩行者等がいるときは、横断歩道の手前で一時停止し、その通行を妨げてはいけません。'},
+{q:'横断歩道の近くに歩行者が見えなくても、周囲を確認せずに通過してよい。',a:false,e:'横断歩道やその付近では、歩行者がいないことが明らかな場合を除き、停止できる速度で進行するなど、状況に応じた安全確認が必要です。'},
+{q:'子どもが道路の近くにいるときは、急に飛び出す可能性を考えて運転する。',a:true,e:'子どもは周囲の危険に気づかず行動することがあります。速度を落とし、すぐ止まれるように備えます。'},
+{q:'車の陰で見えない歩行者がいるかもしれないので、見通しが悪い場所では速度を落とす。',a:true,e:'駐車車両や建物の陰は死角になります。見えない部分に危険があると考え、速度を落として安全を確かめましょう。'},
+{q:'歩行者が横断歩道を渡り終えそうなら、少し近づいても問題ない。',a:false,e:'歩行者の安全を優先し、横断を妨げないようにします。焦らず、歩行者が安全に通行できることを確認しましょう。'}],
+rules:[
+{q:'赤信号では、停止位置を守って停止しなければならない。',a:true,e:'赤信号では停止位置を守って停止します。交差点内に進入してよいわけではありません。'},
+{q:'黄色信号に変わったら、どんな状況でも急ブレーキで停止しなければならない。',a:false,e:'黄色信号では原則停止ですが、安全に停止できない場合はそのまま進むことができます。急ブレーキによる危険にも注意します。'},
+{q:'踏切では、原則として直前で一時停止し、安全を確かめてから通過する。',a:true,e:'踏切では原則として直前で一時停止し、目と耳で安全を確認してから通過します。信号機のある踏切では信号に従います。'},
+{q:'運転中にスマートフォンを手に持って画面を注視しても、短時間なら問題ない。',a:false,e:'運転中の携帯電話等の使用や画面の注視は危険で、法律でも禁止・制限されています。操作や確認は安全な場所に停止してから行います。'},
+{q:'雨で路面が濡れているときは、乾いた路面より停止距離が長くなることがある。',a:true,e:'濡れた路面ではタイヤが滑りやすくなり、停止距離が長くなることがあります。速度を控え、車間距離を十分に取ります。'}],
+hazards:[
+{q:'交差点に近づくときは、信号だけでなく歩行者や自転車の動きも確認する。',a:true,e:'交差点では複数の方向から交通が交錯します。信号に従いながら、歩行者・自転車・対向車などを確認します。'},
+{q:'駐車車両の横を通るとき、車の陰から人が出てくる可能性を考える必要はない。',a:false,e:'車の陰は死角です。歩行者や自転車が出てくる可能性を考え、側方間隔を取り、必要に応じて速度を落とします。'},
+{q:'雨の日は視界が悪くなるため、早めにライトを点灯し、車間距離を十分に取る。',a:true,e:'雨天時は視界や路面状況が悪化します。早めのライト点灯と十分な車間距離、控えめな速度を心がけます。'},
+{q:'後続車が近づいているときは、焦って前の車との車間距離を詰めてもよい。',a:false,e:'前方との安全な車間距離を保つことが重要です。後続車にあおられても焦らず、急な操作を避けて安全を優先します。'},
+{q:'見通しの悪い場所では、見えない先に危険があると想定し、すぐに止まれるように備える。',a:true,e:'見通しの悪い場所では、死角から人や車が現れる可能性を想定します。速度を落とし、必要な安全確認を行います。'}]};
+const NAMES={signs:'標識・標示',intersection:'交差点・優先関係',pedestrians:'歩行者・安全確認',rules:'基本の交通ルール',hazards:'危険予測',mixed:'ランダムミックス'};
+let current=[],idx=0,answers=[],category='signs',locked=false;
+const $=id=>document.getElementById(id);
+function shuffle(arr){return [...arr].sort(()=>Math.random()-.5)}
+function startQuiz(){category=$('category').value;let pool=category==='mixed'?Object.values(BANK).flat():BANK[category];current=shuffle(pool).slice(0,5);idx=0;answers=[];locked=false;$('setup').classList.add('hidden');$('result').classList.add('hidden');$('quiz').classList.remove('hidden');$('categoryLabel').textContent=NAMES[category];renderQuestion();window.scrollTo({top:0,behavior:'smooth'})}
+function renderQuestion(){let item=current[idx];locked=false;$('count').textContent=`第${idx+1}問 / 5問`;$('progressFill').style.width=`${idx/5*100}%`;$('qNumber').textContent=`QUESTION ${String(idx+1).padStart(2,'0')}`;$('questionText').textContent=item.q;$('trueBtn').disabled=false;$('falseBtn').disabled=false;$('trueBtn').className='answer';$('falseBtn').className='answer';$('feedback').className='feedback hidden';$('feedback').textContent='';$('next').classList.add('hidden');$('next').textContent=idx===4?'結果を見る →':'次の問題へ →'}
+function answer(val){if(locked)return;locked=true;const item=current[idx],correct=val===item.a;answers.push({val,correct,item});$('trueBtn').disabled=true;$('falseBtn').disabled=true;const chosen=val?$('trueBtn'):$('falseBtn');chosen.classList.add('selected');(item.a? $('trueBtn'):$('falseBtn')).classList.add('correct');if(!correct)chosen.classList.add('wrong');const f=$('feedback');f.className='feedback '+(correct?'good':'bad');f.innerHTML=`<strong>${correct?'正解！':'不正解'}</strong><div>正しい答え：${item.a?'○ 正しい':'× 誤り'}</div><p class="explanation">${item.e}</p>`;$('next').classList.remove('hidden');$('progressFill').style.width=`${(idx+1)/5*100}%`}
+function nextQuestion(){if(!locked)return;if(idx<4){idx++;renderQuestion()}else showResult()}
+function showResult(){ $('quiz').classList.add('hidden');$('result').classList.remove('hidden');const score=answers.filter(a=>a.correct).length;$('scoreRing').textContent=`${score}/5`;$('scoreText').textContent=`${score} / 5`;$('scoreMessage').textContent=score===5?'全問正解！すばらしい！':score>=3?'いい調子！間違えた問題を復習しよう。':'解説を読んで、もう一度チャレンジしてみよう。';$('review').innerHTML=answers.map((a,i)=>`<div class="review-item"><b>${i+1}. ${escapeHtml(a.item.q)}</b><div class="status ${a.correct?'good':'bad'}">${a.correct?'✓ 正解':'✕ 不正解'}｜正しい答え：${a.item.a?'○ 正しい':'× 誤り'}</div><div>${escapeHtml(a.item.e)}</div></div>`).join('');window.scrollTo({top:0,behavior:'smooth'})}
+function escapeHtml(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+$('start').addEventListener('click',startQuiz);$('trueBtn').addEventListener('click',()=>answer(true));$('falseBtn').addEventListener('click',()=>answer(false));$('next').addEventListener('click',nextQuestion);$('quit').addEventListener('click',()=>{$('quiz').classList.add('hidden');$('setup').classList.remove('hidden')});$('retry').addEventListener('click',startQuiz);$('change').addEventListener('click',()=>{$('result').classList.add('hidden');$('setup').classList.remove('hidden');window.scrollTo({top:0,behavior:'smooth'})});
+</script>
+</body>
+</html>
